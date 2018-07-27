@@ -1,0 +1,9 @@
+<div *ngFor="let school of schools | async">
+  <div class="card mt-3">
+    <div class="card-body">
+      <h5 class="card-title">{{school.Name}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{school.Location.City}}</h6>
+      <p class="card-text">{{ school.Caption }}</p>
+    </div>
+  </div>
+</div>
